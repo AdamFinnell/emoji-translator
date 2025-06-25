@@ -4,36 +4,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emoji Translator</title>
+        <title>8-Bit Cyberpunk Emoji Translator</title>
+    <link href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>" rel="icon" type="image/svg+xml">
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="text" id="translator-input">
-        <button id="submit-button">Submit</button>
-        <form>
-            <p>How would you like to translate?</p>
-            <div class="radio-button-section">
-                <input type="radio" name="translation-section" class="translation-section radio-button" value="encode" id="encode" checked>
-                <label for="encode">Encode</label>
-            </div>
-            <div class="radio-button-section">
-                <input type="radio" name="translation-section" value="translate" class="translation-section radio-button" id="translate">
-                <label for="translate">Translate</label>
-            </div>
-            <div class="radio-button-section">
-                <input type="radio" name="translation-section" value="madlib" class="translation-section radio-button" id="madlib">
-                <label for="madlib">Madlib</label>
-            </div>
-            <div class="radio-button-section">
-                <input type="radio" name="translation-section" value="search" class="translation-section radio-button" id="search">
-                <label for="search">Search</label>
-            </div>
-            <div class="radio-button-section">
-                <input type="radio" name="translation-section" value="random" class="translation-section radio-button" id="random">
-                <label for="random">Random</label>
+       <div class="container">
+        <header class="header">
+            <h1 class="title">🤖 Emoji Translator 🌐</h1>
+            <p class="subtitle">Decode the future, one emoji at a time</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="translator-input" placeholder="Enter your text or emojis here...">
+            <button id="submit-button">Execute Translation</button>
+        </div>
+
+        <form class="translation-modes">
+            <h2>🔧 Translation Protocol</h2>
+            <div class="radio-grid">
+                <div class="radio-button-section">
+                    <input type="radio" name="translation-section" class="translation-section radio-button" value="encode" id="encode" checked>
+                    <label for="encode">🔒 Encode</label>
+                </div>
+                <div class="radio-button-section">
+                    <input type="radio" name="translation-section" value="translate" class="translation-section radio-button" id="translate">
+                    <label for="translate">🔓 Translate</label>
+                </div>
+                <div class="radio-button-section">
+                    <input type="radio" name="translation-section" value="madlib" class="translation-section radio-button" id="madlib">
+                    <label for="madlib">🎲 Madlib</label>
+                </div>
+                <div class="radio-button-section">
+                    <input type="radio" name="translation-section" value="search" class="translation-section radio-button" id="search">
+                    <label for="search">🔍 Search</label>
+                </div>
+                <div class="radio-button-section">
+                    <input type="radio" name="translation-section" value="random" class="translation-section radio-button" id="random">
+                    <label for="random">⚡ Random</label>
+                </div>
             </div>
         </form>
 
-        <h1 id="results">&nbsp;</h1>
+        <div class="results-section">
+            <h1 id="results">Ready to translate...</h1>
+        </div>
+    </div>
+
 
         <script src="./emojis.js"></script>
         <script src="./encode.js"></script>
