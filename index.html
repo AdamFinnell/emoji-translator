@@ -15,7 +15,16 @@
             <h1 class="title">🤖 Emoji Translator 🌐</h1>
             <p class="subtitle">Decode the future, one emoji at a time</p>
         </header>
-
+    <a href="#" id="help-toggle">❔ Show/Hide Help</a>
+    <ul id="help-text" class="hidden">
+        <li><strong>Encode</strong>: Translates each letter to a matching emoji.</li>
+        <li><strong>Translate</strong>: Matches emoji names to emoji symbols (e.g. "fire" ➡️ 🔥).</li>
+        <li><strong>Madlib</strong>: Replaces words with random emojis based on category.</li>
+        <li><strong>Search</strong>: Lists all emojis that contain the search word.</li>
+        <li><strong>Random</strong>: Picks a random mode and translates your input.</li>
+    </ul>
+    <br>
+    <br>
         <div class="input-section">
             <input type="text" id="translator-input" placeholder="Enter your text or emojis here...">
             <button id="submit-button">Execute Translation</button>
@@ -34,7 +43,7 @@
                 </div>
                 <div class="radio-button-section">
                     <input type="radio" name="translation-section" value="madlib" class="translation-section radio-button" id="madlib">
-                    <label for="madlib">🎲 Madlib</label>
+                    <label for="madlib">⚡ Madlib</label>
                 </div>
                 <div class="radio-button-section">
                     <input type="radio" name="translation-section" value="search" class="translation-section radio-button" id="search">
@@ -42,7 +51,7 @@
                 </div>
                 <div class="radio-button-section">
                     <input type="radio" name="translation-section" value="random" class="translation-section radio-button" id="random">
-                    <label for="random">⚡ Random</label>
+                    <label for="random">🎲 Random</label>
                 </div>
             </div>
         </form>
